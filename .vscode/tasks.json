@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Arduino: Compile",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "./scripts/arduino-cli.sh",
+        "compile"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Upload",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "./scripts/arduino-cli.sh",
+        "upload"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Compile And Upload",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "./scripts/arduino-cli.sh",
+        "both"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Monitor",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "./scripts/arduino-cli.sh",
+        "monitor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Board List",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "./scripts/arduino-cli.sh",
+        "board-list"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
